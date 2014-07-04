@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Creational Patterns\DesignPatterns.Creational Patterns.AbstractFactory.csproj">
+    <ProjectReference Include="..\Creational Patterns\Abstract Factory\DesignPatterns.Creational Patterns.AbstractFactory.csproj">
       <Project>{674cbd5f-d4c0-4695-8b7d-cec88a67efb2}</Project>
       <Name>DesignPatterns.Creational Patterns.AbstractFactory</Name>
     </ProjectReference>
