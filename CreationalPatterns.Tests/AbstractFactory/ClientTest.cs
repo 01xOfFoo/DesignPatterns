@@ -8,11 +8,18 @@ namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory
     [TestClass]
     public class AbstractFactoryTest
     {
+        private Client client;
+
+        [TestInitialize]
+        public void SetUp()
+        {
+            client = new Client();
+        }
+
         [TestMethod]
         [ExpectedException(typeof(CarFactoryNotAssignedException))]
         public void ClientThrowsExceptionIfNoFactoryIsGiven()
         {
-            Client client = new Client();
             client.TestCars();
         }
     }
