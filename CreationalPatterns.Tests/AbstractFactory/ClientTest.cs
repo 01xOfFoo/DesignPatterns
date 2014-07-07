@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using DesignPatterns.CreationalPatterns.AbstractFactory;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Exceptions;
-using DesignPatterns.CreationalPatterns.AbstractFactory;
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory
 {

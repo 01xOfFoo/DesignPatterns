@@ -5,7 +5,9 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPatterns.Tests", "CreationalPatterns.Tests\DesignPatterns.CreationalPatterns.Tests.csproj", "{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational Patterns.AbstractFactory", "Creational Patterns\Abstract Factory\DesignPatterns.Creational Patterns.AbstractFactory.csproj", "{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPatterns.Builder", "Creational Patterns\DesignPatterns.CreationalPatterns.Builder\DesignPatterns.CreationalPatterns.Builder.csproj", "{808F0836-63D9-4CD7-87B0-276B61F4195F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational Patterns.AbstractFactory", "Creational Patterns\DesignPatterns.CreationalPatterns.Abstract Factory\DesignPatterns.Creational Patterns.AbstractFactory.csproj", "{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU

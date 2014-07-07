@@ -6,3 +6,4 @@
 Patterns:
 
 - Abstract Factory
+- Builder

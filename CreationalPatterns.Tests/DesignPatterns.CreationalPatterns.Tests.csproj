@@ -50,13 +50,21 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AbstractFactory\BrewerTest.cs" />
     <Compile Include="AbstractFactory\ClientTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Creational Patterns\Abstract Factory\DesignPatterns.Creational Patterns.AbstractFactory.csproj">
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Creational Patterns\DesignPatterns.CreationalPatterns.Abstract Factory\DesignPatterns.Creational Patterns.AbstractFactory.csproj">
       <Project>{674cbd5f-d4c0-4695-8b7d-cec88a67efb2}</Project>
       <Name>DesignPatterns.Creational Patterns.AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Creational Patterns\DesignPatterns.CreationalPatterns.Builder\DesignPatterns.CreationalPatterns.Builder.csproj">
+      <Project>{808f0836-63d9-4cd7-87b0-276b61f4195f}</Project>
+      <Name>DesignPatterns.CreationalPatterns.Builder</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
