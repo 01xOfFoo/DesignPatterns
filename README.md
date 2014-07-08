@@ -7,3 +7,4 @@ Patterns:
 
 - Abstract Factory
 - Builder
+- FactoryMethod

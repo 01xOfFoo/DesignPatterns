@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AbstractFactory\BrewerTest.cs" />
+    <Compile Include="Builder\BrewerTest.cs" />
     <Compile Include="AbstractFactory\ClientTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
