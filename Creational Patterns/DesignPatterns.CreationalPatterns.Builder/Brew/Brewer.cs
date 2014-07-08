@@ -3,7 +3,7 @@ using DesignPatterns.CreationalPatterns.Builder.Brew.Exceptions;
 
 namespace DesignPatterns.CreationalPatterns.Builder.Brew
 {
-    public class Brewer
+    public class Brewer : IBrewer
     {
         private IBrewery brewery;
         

@@ -47,6 +47,7 @@
     <Compile Include="Brew\Brewery\Contracts\IBrewery.cs" />
     <Compile Include="Brew\Exceptions\BreweryNotAssignedException.cs" />
     <Compile Include="Brew\Brewery\PaulanerBrewery.cs" />
+    <Compile Include="Brew\IBrewer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
