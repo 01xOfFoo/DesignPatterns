@@ -8,3 +8,4 @@ Patterns:
 - Abstract Factory
 - Builder
 - FactoryMethod
+- Object Pool

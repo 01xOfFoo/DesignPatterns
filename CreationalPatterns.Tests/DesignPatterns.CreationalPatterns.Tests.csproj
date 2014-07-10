@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="Builder\BrewerTest.cs" />
     <Compile Include="AbstractFactory\ClientTest.cs" />
+    <Compile Include="ObjectPool\Dummy.cs" />
+    <Compile Include="ObjectPool\ObjectPoolTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +67,10 @@
     <ProjectReference Include="..\Creational Patterns\DesignPatterns.CreationalPatterns.Builder\DesignPatterns.CreationalPatterns.Builder.csproj">
       <Project>{808f0836-63d9-4cd7-87b0-276b61f4195f}</Project>
       <Name>DesignPatterns.CreationalPatterns.Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Creational Patterns\DesignPatterns.CreationalPatterns.ObjectPool\DesignPatterns.CreationalPatterns.ObjectPool.csproj">
+      <Project>{d713c2b8-cae6-4318-bb8a-5c7b868cfdb8}</Project>
+      <Name>DesignPatterns.CreationalPatterns.ObjectPool</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
