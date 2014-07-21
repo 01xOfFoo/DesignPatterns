@@ -1,21 +1,17 @@
-﻿using DesignPatterns.CreationalPatterns.Builder.Brew;
+﻿using System;
+using DesignPatterns.CreationalPatterns.Builder.Brew;
 using DesignPatterns.CreationalPatterns.Builder.Brew.Brewery;
 using DesignPatterns.CreationalPatterns.Builder.Brew.Brewery.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.CreationalPatterns.Builder
 {
-    class Program
+    internal static class Program
     {
-        private static IBrewer brewer;
+        private static IBrewer _brewer;
 
-        static void Main(string[] args)
+        private static void Main()
         {
-            brewer = new Brewer();
+            _brewer = new Brewer();
 
             BrewPaulanerBeer();
             BrewBecksBeer();
@@ -26,23 +22,22 @@ namespace DesignPatterns.CreationalPatterns.Builder
         private static void BrewBecksBeer()
         {
             IBrewery brewery = new BecksBrewery();
-            brewer.SetBrewery(brewery);
+            _brewer.SetBrewery(brewery);
             BrewBeer();
         }
 
         private static void BrewPaulanerBeer()
         {
             IBrewery brewery = new PaulanerBrewery();
-            brewer.SetBrewery(brewery);
+            _brewer.SetBrewery(brewery);
             BrewBeer();
         }
 
         private static void BrewBeer()
         {
-            brewer.BrewBeer();
-            Beer beer = brewer.GetBeer();
+            _brewer.BrewBeer();
+            Beer beer = _brewer.GetBeer();
             Console.WriteLine(beer.ToString());
         }
-
     }
 }

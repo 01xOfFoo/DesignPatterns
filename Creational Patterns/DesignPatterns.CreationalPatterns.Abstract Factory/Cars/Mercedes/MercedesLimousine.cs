@@ -1,8 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
-
-namespace DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Mercedes
+﻿namespace DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Mercedes
 {
-    class MercedesLimousine : Limousine
+    internal class MercedesLimousine : Limousine
     {
     }
 }

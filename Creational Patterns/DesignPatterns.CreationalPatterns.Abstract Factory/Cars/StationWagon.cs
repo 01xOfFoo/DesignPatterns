@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory.Cars
 {
-    class StationWagon : Car, IStationWagon
+    internal class StationWagon : Car, IStationWagon
     {
     }
 }

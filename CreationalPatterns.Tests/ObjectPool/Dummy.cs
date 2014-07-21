@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.ObjectPool
+﻿namespace DesignPatterns.CreationalPatterns.Tests.ObjectPool
 {
-    class Dummy
+    internal class Dummy
     {
-        public string createdBy { get; private set; }
-
         public Dummy()
         {
-            createdBy = "default constructor";
+            CreatedBy = "default constructor";
         }
 
         public Dummy(string constructorString)
         {
-            createdBy = constructorString;
+            CreatedBy = constructorString;
         }
+
+        public string CreatedBy { get; private set; }
     }
 }

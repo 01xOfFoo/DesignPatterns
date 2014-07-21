@@ -6,7 +6,6 @@ namespace DesignPatterns.CreationalPatterns.Builder.Brew.Exceptions
     {
         public BreweryNotAssignedException() : base("No brewery assigned")
         {
-
         }
     }
 }

@@ -1,23 +1,21 @@
 ﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
-using DesignPatterns.CreationalPatterns;
-using System.Diagnostics;
-using System;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Exceptions;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Factories.Contracts;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory
 {
     public class Client : IClient
     {
-        private ICarFactory factory = null;
+        private ICarFactory _factory;
 
         public void ChangeFactory(ICarFactory factory)
         {
-            this.factory = factory;
+            _factory = factory;
         }
 
         public void TestCars()
         {
-            if (factory == null)
+            if (_factory == null)
                 throw new CarFactoryNotAssignedException();
 
             TestLimousine();
@@ -26,13 +24,13 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactory
 
         private void TestStationWagon()
         {
-            ICar car = factory.CreateKombi();
+            ICar car = _factory.CreateKombi();
             AccelerateCar(car);
         }
 
         private void TestLimousine()
         {
-            ICar car = factory.CreateLimousine();
+            ICar car = _factory.CreateLimousine();
             AccelerateCar(car);
         }
 

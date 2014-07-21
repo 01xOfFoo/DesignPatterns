@@ -3,7 +3,7 @@ using DesignPatterns.CreationalPatterns.FactoryMethod.Brewery.Contracts;
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethod.Brewery
 {
-    class BecksBrewery : IBrewery
+    internal class BecksBrewery : IBrewery
     {
         public Brew MakeBrew()
         {

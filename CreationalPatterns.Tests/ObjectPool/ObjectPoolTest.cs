@@ -1,26 +1,25 @@
-﻿using System;
+﻿using DesignPatterns.CreationalPatterns.ObjectPool.Pool;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DesignPatterns.CreationalPatterns.ObjectPool.Pool;
 
-namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.ObjectPool
+namespace DesignPatterns.CreationalPatterns.Tests.ObjectPool
 {
     [TestClass]
     public class ObjectPoolTest
     {
-        private IObjectPool<Dummy> buildObjectPool()
+        private IObjectPool<Dummy> BuildObjectPool()
         {
             return new ObjectPool<Dummy>();
         }
 
-        private IObjectPool<Dummy> buildObjectPoolWithConstructorDelegate()
+        private IObjectPool<Dummy> BuildObjectPoolWithConstructorDelegate()
         {
-            return new ObjectPool<Dummy>( () => new Dummy("special") );                    
+            return new ObjectPool<Dummy>(() => new Dummy("special"));
         }
 
         [TestMethod]
         public void CanConsumeObject()
         {
-            IObjectPool<Dummy> objectPool = buildObjectPool();
+            IObjectPool<Dummy> objectPool = BuildObjectPool();
             Dummy dummy = objectPool.Consume();
 
             Assert.IsNotNull(dummy);
@@ -29,7 +28,7 @@ namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.ObjectPool
         [TestMethod]
         public void CanReleaseObject()
         {
-            IObjectPool<Dummy> objectPool = buildObjectPool();
+            IObjectPool<Dummy> objectPool = BuildObjectPool();
             Dummy dummy = objectPool.Consume();
             objectPool.Release(dummy);
 
@@ -39,7 +38,7 @@ namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.ObjectPool
         [TestMethod]
         public void ReturnsTheSameObjectAfterItsBeenReleased()
         {
-            IObjectPool<Dummy> objectPool = buildObjectPool();
+            IObjectPool<Dummy> objectPool = BuildObjectPool();
 
             Dummy dummy = objectPool.Consume();
             objectPool.Release(dummy);
@@ -53,10 +52,10 @@ namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.ObjectPool
         [TestMethod]
         public void CheckIfDelegateIsUsedToConstructObjects()
         {
-            IObjectPool<Dummy> objectPool = buildObjectPoolWithConstructorDelegate();
+            IObjectPool<Dummy> objectPool = BuildObjectPoolWithConstructorDelegate();
             Dummy dummy = objectPool.Consume();
 
-            Assert.AreEqual("special", dummy.createdBy);
+            Assert.AreEqual("special", dummy.CreatedBy);
         }
     }
 }

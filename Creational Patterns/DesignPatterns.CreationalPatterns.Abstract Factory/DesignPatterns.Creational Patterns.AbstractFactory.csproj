@@ -7,8 +7,8 @@
     <ProjectGuid>{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatterns.CreationalPatterns</RootNamespace>
-    <AssemblyName>Creational Patterns</AssemblyName>
+    <RootNamespace>DesignPatterns.CreationalPatterns.AbstractFactory</RootNamespace>
+    <AssemblyName>DesignPatterns.CreationalPatterns.AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,15 +1,15 @@
-﻿using DesignPatterns.CreationalPatterns.FactoryMethod.Beer;
+﻿using System;
+using DesignPatterns.CreationalPatterns.FactoryMethod.Beer;
 using DesignPatterns.CreationalPatterns.FactoryMethod.Brewery;
 using DesignPatterns.CreationalPatterns.FactoryMethod.Brewery.Contracts;
-using System;
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethod
 {
-    class Program
+    internal static class Program
     {
-        private static IBrewery brewery;
+        private static IBrewery _brewery;
 
-        static void Main(string[] args)
+        private static void Main()
         {
             BrewPaulanerWeißbier();
             BrewBecksPilsener();
@@ -19,19 +19,19 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethod
 
         private static void BrewPaulanerWeißbier()
         {
-            brewery = new PaulanerBrewery();
+            _brewery = new PaulanerBrewery();
             BrewBeer();
         }
 
         private static void BrewBecksPilsener()
         {
-            brewery = new BecksBrewery();
+            _brewery = new BecksBrewery();
             BrewBeer();
         }
 
         private static void BrewBeer()
         {
-            Brew brew = brewery.MakeBrew();
+            Brew brew = _brewery.MakeBrew();
             Console.WriteLine(brew.ToString());
         }
     }

@@ -1,65 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.CreationalPatterns.ObjectPool.Pool
 {
     public class ObjectPool<T> : IObjectPool<T> where T : class, new()
     {
-        private Func<T> constructor = null;
-        private Queue<T> pool = new Queue<T>();
-        private int concurrendconsumedObjectsCount;
+        private readonly Func<T> _constructor;
+        private readonly Queue<T> _pool = new Queue<T>();
 
         public ObjectPool()
         {
-            this.concurrendconsumedObjectsCount = 0;
+            ConcurrendconsumedObjectsCount = 0;
         }
 
         public ObjectPool(Func<T> constructor) : this()
         {
-            this.constructor = constructor;
+            _constructor = constructor;
         }
+
+        public int ConcurrendconsumedObjectsCount { get; set; }
 
         public T Consume()
         {
-            T instance = null;
-            if (this.pool.Count == 0)
+            T instance;
+            if (_pool.Count == 0)
             {
-                instance = buildObject();
-                this.concurrendconsumedObjectsCount++;
+                instance = BuildObject();
+                ConcurrendconsumedObjectsCount++;
             }
             else
             {
-                instance = this.pool.Dequeue();
-            }
-            return instance;
-        }
-
-        private T buildObject()
-        {
-            T instance = null;
-            if (this.constructor != null)
-            {
-                instance = this.constructor();
-            }
-            else
-        	{
-                instance = new T();
+                instance = _pool.Dequeue();
             }
             return instance;
         }
 
         public void Release(T instance)
         {
-            this.pool.Enqueue(instance);
-            this.concurrendconsumedObjectsCount--;
+            _pool.Enqueue(instance);
+            ConcurrendconsumedObjectsCount--;
         }
 
         public int GetAmountOfConsumeableObjects()
         {
-            return this.pool.Count;
+            return _pool.Count;
+        }
+
+        private T BuildObject()
+        {
+            return _constructor != null ? _constructor() : new T();
         }
     }
 }

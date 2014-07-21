@@ -1,9 +1,8 @@
 ﻿using DesignPatterns.CreationalPatterns.Builder.Brew;
-using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DesignPatterns.CreationalPatterns.Builder.Brew.Exceptions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.AbstractFactory
+namespace DesignPatterns.CreationalPatterns.Tests.Builder
 {
     [TestClass]
     public class BrewerTest
@@ -17,7 +16,7 @@ namespace DesignPatterns.CreationalPatterns.Tests.AbstractFactory.AbstractFactor
         }
 
         [TestMethod]
-        [ExpectedException(typeof(BreweryNotAssignedException))]
+        [ExpectedException(typeof (BreweryNotAssignedException))]
         public void ExceptIfNoBreweryAssigned()
         {
             brewer.BrewBeer();

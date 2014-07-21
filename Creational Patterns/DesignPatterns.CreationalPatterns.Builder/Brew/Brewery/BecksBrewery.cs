@@ -2,38 +2,38 @@
 
 namespace DesignPatterns.CreationalPatterns.Builder.Brew.Brewery
 {
-    class BecksBrewery : IBrewery
+    internal class BecksBrewery : IBrewery
     {
-        private Beer beer;
+        private readonly Beer _beer;
 
         public BecksBrewery()
         {
-            beer = new Beer();
+            _beer = new Beer();
         }
 
         public void Brew()
         {
-            beer.Volume = 0.33;            
+            _beer.Volume = 0.33;
         }
 
         public void Ferment()
         {
-            beer.Potency = 4.9;
+            _beer.Potency = 4.9;
         }
 
         public void Bottle()
         {
-            beer.Label = "Becks Pils";
+            _beer.Label = "Becks Pils";
         }
 
         public void Tag()
         {
-            beer.Price = 0.81;
+            _beer.Price = 0.81;
         }
 
         public Beer GetBeer()
         {
-            return beer;
+            return _beer;
         }
     }
 }

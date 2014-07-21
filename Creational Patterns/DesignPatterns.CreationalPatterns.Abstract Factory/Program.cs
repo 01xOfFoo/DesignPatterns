@@ -1,20 +1,21 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
+﻿using System;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Factories;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Factories.Contracts;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory
 {
-    public class Program
+    public static class Program
     {
-        private static IClient client = null;
+        private static IClient _client;
 
-        public static void Main(string[] args)
+        public static void Main()
         {
-            client = new Client();
+            _client = new Client();
 
             TestDriveAudiCars();
             TestDriveMercedesCars();
 
-            System.Console.ReadLine();
+            Console.ReadLine();
         }
 
         private static void TestDriveAudiCars()
@@ -31,8 +32,8 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactory
 
         private static void TestDrive(ICarFactory carFactory)
         {
-            client.ChangeFactory(carFactory);
-            client.TestCars();
+            _client.ChangeFactory(carFactory);
+            _client.TestCars();
         }
     }
 }

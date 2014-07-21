@@ -1,18 +1,18 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
-using System;
+﻿using System;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory.Cars
 {
-    class Car : ICar
+    internal class Car : ICar
     {
         public Car()
         {
-            Console.WriteLine(this.GetType().Name + " constructed");
+            Console.WriteLine(GetType().Name + " constructed");
         }
 
         public void Accelerate()
         {
-            Console.WriteLine(this.GetType().Name + " accelerates");
+            Console.WriteLine(GetType().Name + " accelerates");
         }
     }
 }

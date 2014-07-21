@@ -5,27 +5,27 @@ namespace DesignPatterns.CreationalPatterns.Builder.Brew
 {
     public class Brewer : IBrewer
     {
-        private IBrewery brewery;
-        
+        private IBrewery _brewery;
+
         public void SetBrewery(IBrewery brewery)
         {
-            this.brewery = brewery;
+            _brewery = brewery;
         }
 
         public Beer GetBeer()
         {
-            return brewery.GetBeer();
+            return _brewery.GetBeer();
         }
 
         public void BrewBeer()
         {
-            if (brewery == null)
+            if (_brewery == null)
                 throw new BreweryNotAssignedException();
 
-            brewery.Brew();
-            brewery.Ferment();
-            brewery.Bottle();
-            brewery.Tag();
+            _brewery.Brew();
+            _brewery.Ferment();
+            _brewery.Bottle();
+            _brewery.Tag();
         }
     }
 }

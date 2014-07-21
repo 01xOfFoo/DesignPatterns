@@ -1,6 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
+﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Factories.Contracts;
 
-namespace DesignPatterns.CreationalPatterns
+namespace DesignPatterns.CreationalPatterns.AbstractFactory
 {
     public interface IClient
     {

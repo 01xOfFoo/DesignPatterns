@@ -1,9 +1,10 @@
 ﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Audi;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Factories.Contracts;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory.Factories
 {
-    class AudiFactory : ICarFactory
+    internal class AudiFactory : ICarFactory
     {
         public ILimousine CreateLimousine()
         {

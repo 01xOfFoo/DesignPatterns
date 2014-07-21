@@ -1,5 +1,4 @@
-﻿
-namespace DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts
+﻿namespace DesignPatterns.CreationalPatterns.AbstractFactory.Cars.Contracts
 {
     public interface ILimousine : ICar
     {

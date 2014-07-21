@@ -1,5 +1,4 @@
-﻿
-namespace DesignPatterns.CreationalPatterns.Builder.Brew.Brewery.Contracts
+﻿namespace DesignPatterns.CreationalPatterns.Builder.Brew.Brewery.Contracts
 {
     public interface IBrewery
     {
