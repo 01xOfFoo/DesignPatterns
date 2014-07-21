@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPatterns.Tests", "CreationalPatterns.Tests\DesignPatterns.CreationalPatterns.Tests.csproj", "{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPatterns.Builder", "Creational Patterns\DesignPatterns.CreationalPatterns.Builder\DesignPatterns.CreationalPatterns.Builder.csproj", "{808F0836-63D9-4CD7-87B0-276B61F4195F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational Patterns.AbstractFactory", "Creational Patterns\DesignPatterns.CreationalPatterns.Abstract Factory\DesignPatterns.Creational Patterns.AbstractFactory.csproj", "{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2}"
@@ -13,16 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPatterns.ObjectPool", "Creational Patterns\DesignPatterns.CreationalPatterns.ObjectPool\DesignPatterns.CreationalPatterns.ObjectPool.csproj", "{D713C2B8-CAE6-4318-BB8A-5C7B868CFDB8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{11D08A3F-EA09-4EA8-9D43-04381D8A87C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.CreationalPatterns.Tests", "Creational Patterns\DesignPatterns.CreationalPatterns.Tests\DesignPatterns.CreationalPatterns.Tests.csproj", "{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{808F0836-63D9-4CD7-87B0-276B61F4195F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,8 +37,19 @@ Global
 		{D713C2B8-CAE6-4318-BB8A-5C7B868CFDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D713C2B8-CAE6-4318-BB8A-5C7B868CFDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D713C2B8-CAE6-4318-BB8A-5C7B868CFDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{808F0836-63D9-4CD7-87B0-276B61F4195F} = {11D08A3F-EA09-4EA8-9D43-04381D8A87C9}
+		{674CBD5F-D4C0-4695-8B7D-CEC88A67EFB2} = {11D08A3F-EA09-4EA8-9D43-04381D8A87C9}
+		{994E8C29-E67F-4253-9B40-E1FF208D966D} = {11D08A3F-EA09-4EA8-9D43-04381D8A87C9}
+		{D713C2B8-CAE6-4318-BB8A-5C7B868CFDB8} = {11D08A3F-EA09-4EA8-9D43-04381D8A87C9}
+		{6E4901A5-90CD-4E23-A4C1-D6B7F4602DA2} = {11D08A3F-EA09-4EA8-9D43-04381D8A87C9}
 	EndGlobalSection
 EndGlobal
