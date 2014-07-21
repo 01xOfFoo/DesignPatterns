@@ -13,3 +13,4 @@ Creational Patterns:
 Structural Patterns:
 
 - Adapter
+- Bridge
