@@ -3,9 +3,13 @@
 #####Basic C# implementations of the "main" software design patterns
 
 
-Patterns:
+Creational Patterns:
 
 - Abstract Factory
 - Builder
 - FactoryMethod
 - Object Pool
+
+Structural Patterns:
+
+- Adapter
